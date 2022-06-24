@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="b3" src="img/logo.png" alt="logo">
+        <button id="b2">Inicio<a href="#"></a></button>
+        <button id="b2">Hoy<a href="#"></a></button>
+        <button onclick="myFunction()" class="dropbtn">Crear V</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Crear un Idea Pin</a>
+                <a href="#about">Crear Pin</a>
+             </div>
+        <input type="text" placeholder="           Buscar">
+        <button id="b1"><a href=""><span class="material-icons">notifications</span></a></button>
+        <button id="b1"><a href=""><span class="material-icons">sms</span></a></button>
+        <button id="b1"><a href=""><span class="material-icons">account_circle</span></a></button>
+        <button  onclick="myFunction1()" class="dropbtn" id="b1">V</button>
+        <!--<span class="material-icons">expand_more</span>-->
+         <div id="myDropdown1" class="dropdown-content">
+            <a href="#">Agregar cuenta</a>
+            <a href="#">Configuracion</a>
+            <a href="#">Instalar aplicacion</a>
+            <a href="#">Obtener ayuda</a>
+            <a href="#">Salir</a>
+         </div>
+    </header>
+    <main>
+        <!--Insetar las imagenes-->
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/1.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+        <article><img src="img/3.jpg" alt=""></article>
+        <article><img src="img/2.jpg" alt=""></article>
+    </main>
+    <script>
+
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        function myFunction1() {
+          document.getElementById("myDropdown1").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body{
+padding: 0px;
+margin: 0px;
+font-family: Arial, Helvetica, sans-serif;
+min-width: 550px;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    min-width: 550px;
+}
+
+#b1{
+    width: 3vw ;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 0;
+}
+#b1:hover{
+    background-color: gray;
+    border-radius: 40px;
+}
+
+#b2{
+    width: 5vw ;
+    background-color: white;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    
+}
+#b2:hover{
+    background-color: black;
+    border-radius: 35px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+input{
+    width: 68vw ;
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    height: 6vh;
+    margin-top: 11px;
+    border: 0;
+    background-image:url(lupa.png);
+    background-repeat: no-repeat;
+}
+#b3{
+    width: 30px ;
+    height: auto;
+    padding-left: 15px;  
+    padding-right: 10px;
+}
+#b3:hover{
+background-color: gray;
+border-radius: 30px;
+}
+input:focus{
+    border-style: hidden;
+border: 5px cornflowerblue solid;
+background-color: rgb(221, 221, 221);
+background-image: none;
+
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    object-fit: contain;
+}
+
+
+.dropbtn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 15px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .dropdown-content a:hover {background-color: #ddd}
+  
+ 
+  .show {display:block;}
+
+
+main{
+    width: 98%;
+    column-width: 250px;
+    display: inline-block;
+    -webkit-column-break-inside: avoid;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 11vh;
+
+    
+
+}
+article{
+    padding-bottom: 28px;
+}
+
+
+
+img {
+    object-fit:contain;
+    width: 250px;
+    height: auto;
+    max-height: 100%;
+    border-radius: 16px;
+  }
+
+  img:hover{
+   opacity: .3;
+  }
