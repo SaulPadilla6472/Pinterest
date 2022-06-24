@@ -1,2 +1,2 @@
 # Pinterest
-Proyecto en equipo pagina Pinterest
+Proyecto pagina Pinterest
